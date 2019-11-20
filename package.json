@@ -1,13 +1,15 @@
 {
-  "name": "react-app-rewired-template",
+  "name": "kaban-jp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-app-rewired start",
+    "start": "NODE_ENV=production serve -s build",
+    "dev": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test - env=jsdom",
     "eject": "react-scripts eject",
     "typecheck": "tsc -p . --noEmit",
+    "postinstall": "patch-package",
     "lint": "eslint src --ext='.ts,.tsx'"
   },
   "dependencies": {
@@ -31,14 +33,21 @@
     "@types/styled-components": "4.4.0",
     "@typescript-eslint/eslint-plugin": "2.6.1",
     "@typescript-eslint/parser": "2.6.1",
+    "babel-plugin-module-resolver": "^3.2.0",
     "customize-cra": "0.8.0",
     "eslint": "6.6.0",
     "eslint-config-prettier": "6.5.0",
+    "eslint-config-react-app": "^5.0.2",
     "eslint-plugin-prettier": "3.1.1",
     "eslint-plugin-react": "7.16.0",
+    "patch-package": "^6.2.0",
+    "postinstall-postinstall": "^2.0.0",
     "prettier": "1.19.0",
     "react-app-rewired": "2.1.5",
-    "typescript": "3.7.2"
+    "typescript": "3.7.2",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.0.2",
+    "tsconfig-paths": "^3.7.0"
   },
   "browserslist": {
     "production": [
