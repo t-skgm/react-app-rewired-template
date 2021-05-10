@@ -15,7 +15,7 @@
   "dependencies": {
     "date-fns": "2.7.0",
     "firebase": "7.3.0",
-    "lodash": "4.17.15",
+    "lodash": "4.17.21",
     "module-alias": "2.2.2",
     "qs": "6.9.1",
     "react": "16.12.0",
